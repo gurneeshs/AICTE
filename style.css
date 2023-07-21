@@ -846,7 +846,7 @@ footer .section3 .top .card3 .card-item:hover{
 }
 
 footer .section3 .bottom{
-    color:rgb(227, 225, 225);
+    color:white;
     padding: 0.5rem;
     text-decoration: none;
     list-style: none;
@@ -925,7 +925,7 @@ footer .section3 .bottom .top li:hover{
         display: none;
     }
 } 
-
+/* --------------------------------------CSS FOR MOBILE------------------------------------------------ */
 @media only screen and (max-width: 540px )  {
     .mobile{
         display: block;
@@ -1083,5 +1083,107 @@ footer .section3 .bottom .top li:hover{
         font-size: 1.5rem;
         margin: 0rem 1rem;
     }
-        
+    /* --------------------------------------SECTION 1------------------------------------------------ */
+    #Section1m
+    {
+        min-width: 100%;
+        min-height: 140%;
+    }
+    /* --------------DIV IMAGES------------ */
+    #imagesm{
+        width: 100%;
+        display: flex;
+        /* flex-direction: row; */
+        overflow: hidden;
+    }
+    #imagesm img{
+        width: 100%;
+        height: 100%;
+
+    }
+    .img-itmm{
+        translate: 0% 0%;
+        min-width: 100%;
+        transition: 0.3s;
+    }      
+    /* --------------DIV BUTTONS----------- */
+    #buttonsm{
+        height: fit-content;
+        position: absolute;
+        margin: 0rem 0rem;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    #buttonsm #rightm{
+        background-color: none;
+        border: 2px solid rgba(255, 255, 255, 0);
+        border-radius: 3%;
+        font-size: 3rem;
+        justify-content: center;
+        padding: 9% 1%;
+        width: 5%;
+        position: absolute;
+        right: 0.1rem;
+        z-index: +1;
+
+    }
+    #buttonsm #rightm:hover{
+        border: 0.5px solid #131A22;
+        border-radius: 3%;
+        cursor: pointer;
+    }
+    #buttonsm #leftm:hover{
+        border: 0.5px solid #131A22;
+        border-radius: 3%;
+        cursor: pointer;
+    }
+    #buttonsm #leftm{
+        background-color: none;
+        border: 2px solid rgba(255, 255, 255, 0);
+        border-radius: 3%;
+        font-size: 3rem;
+        justify-content: center;
+        padding: 9% 1%;
+        width: 5%;
+        position: absolute;
+        left: 1rem;
+        z-index: +1;
+
+    }
+    /* --------------------------SECTION 2-------------------- */
+    #Section2 .container{
+        padding: 0rem 0rem;
+        translate: 0% 0%;
+    }
+    
+    .cont-itms{
+        /* border: 1px solid green; */
+        margin: 0rem;
+        padding: 0rem;
+        display: flex;
+        flex-direction: column;
+    }
+    #Section2 .container .container-cards{
+        border-top: 0.3rem solid rgba(219, 219, 219, 0.441);
+        /* border: 1px solid red; */
+        margin: 0rem;
+    }
+    
+    
+    /* --------------------------FOOTER SECTION-------------- */
+    .section1 .card{
+        margin: 0.5rem 0.2rem;
+        width: 100%;
+        padding: 0.5rem 0.9rem;
+    }
+    footer .section3{
+        padding: 0.7rem 0rem;
+    }
+    
+    footer .section3 .bottom .top{
+        width: 100%;
+    }
+    
+
 }

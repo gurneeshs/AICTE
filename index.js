@@ -5,7 +5,7 @@ let images = document.querySelectorAll(".img-itm");
 
 start = 0
 end = 0
-
+console.log(images)
 rightbutton.addEventListener("click",()=>{
     if(start!=(images.length-1)){
         start = start + 1
@@ -22,6 +22,34 @@ leftbutton.addEventListener("click",()=>{
         start = end
     }
     images.forEach(element => {
+        element.style.transform = `translateX(-${end*100}%)`
+    })
+})
+
+// *****************************************HOME PAGE SECTION1 MOBILE****************************************************
+let rightbuttonm = document.querySelector("#rightm");
+let leftbuttonm = document.querySelector("#leftm");
+let imagesm = document.querySelectorAll(".img-itmm");
+
+start = 0
+end = 0
+console.log(images)
+rightbuttonm.addEventListener("click",()=>{
+    if(start!=(images.length-1)){
+        start = start + 1
+        end = start
+    }
+    imagesm.forEach(element => {
+        element.style.transform = `translateX(-${start*100}%)`
+    })
+})
+
+leftbuttonm.addEventListener("click",()=>{
+    if(end!=0){
+        end = end - 1
+        start = end
+    }
+    imagesm.forEach(element => {
         element.style.transform = `translateX(-${end*100}%)`
     })
 })
