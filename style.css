@@ -10,6 +10,10 @@ body{
     --scrollbar-width-height:1px;
     scroll-behavior: smooth;
 }
+.mobile{
+    display: none
+}
+
 
 /* ------------------------------------------HEADER SECTION-------------------------------------- */
 .head
@@ -584,6 +588,10 @@ nav
     border-top-right-radius: 2%;
     background-color: rgba(236, 236, 236, 0.383);
 }
+.image-list .card .card-image img{
+    width: 100%;
+    height: 15rem;
+}
 
 .image-list .card .card-detail .offer{
     color: white;
@@ -783,6 +791,7 @@ footer .section3 .top{
 }
 footer .section3 .top .card3
 {
+    /* border: 1px solid white; */
     width: 20%;
     padding: 0.3rem;
     margin: 0.3rem;
@@ -859,4 +868,220 @@ footer .section3 .bottom .top li{
 footer .section3 .bottom .top li:hover{
     text-decoration: underline;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1360px) and (min-width:541px){
+    *{
+        font-size: 12px;
+    }
+    .cart i{
+        font-size: 18px;
+    }
+    #buttons i{
+        font-size: 28px;
+    }
+}
+@media only screen and (max-width: 1017px) and (min-width:541px) {
+    *{
+        font-size: 10px;
+    }
+    
+    .cart i{
+        font-size: 17px;
+    }
+    #buttons i{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 851px)and (min-width:541px) {
+    .logo{
+        width: 8%;
+        padding-top: 0.9rem;
+        padding-bottom: 0rem;
+    }
+    .logo img
+    {
+        margin-top: 0rem;
+        width: 100%;
+        height: 88%;
+    }
+    .search{
+        width: 30%;
+    }
+    
+    .cart i{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 650px) and (min-width:541px){
+    .search{
+        width: 20%;
+    }
+    #Deals_under_25{
+        display: none;
+    }
+    #Exciting_Deals{
+        display: none;
+    }
+} 
+
+@media only screen and (max-width: 540px )  {
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        font-size: 9px;
+    }
+    /* ------------------------------------------HEADER SECTION-------------------------------------- */
+    .head
+    {
+        background-color: #232F3E;
+    }
+    .container
+    {
+        flex-direction: column;       
+    }
+    .container .top{
+        display: flex;
+    }
+    .container .top .left{
+        width: 50%;
+        padding-top: 1rem;
+        padding-left: 0rem;
+        justify-content: left;
+        display: flex;
+    }
+    .container .top .right{
+        width: 50%;
+        display: flex;
+        padding-top: 1rem;
+        padding-right: 0rem;
+        justify-content: right;
+    }
+
+    .container .middle{
+        padding: 0;
+    }
+    .container .bottom{
+        /* border: 1px solid blue; */
+        display: flex;
+        margin: 0.5rem 0rem;
+        padding: 0.4rem 0rem;
+        min-width: 100%;
+        overflow-x: scroll;
+    }
+
+    .container-items
+    {
+        border: 0.1px solid #232f3e;
+    }
+    /* --------------------LOGO------------------------- */
+    .logo{
+        /* border: 1px solid gray; */
+        width: 40%;
+        padding-top: 0rem;
+    }
+    .logo img
+    {
+        translate:0% 20%;
+        height: 70%;
+    }
+    /* ----------------------HAMBERGER-ICON----------------- */
+    .container .top .hamb{
+        /* border: 1px solid red; */
+        margin: 0rem 0.2rem;
+        padding: 0.1rem 0.4rem;
+    }
+    .container .top .hamb i{
+        font-size: 1.6rem;
+        translate:0% 20%;
+    }
+    /* -----------------------SEARCH-BAR ---------------------*/
+    .search{
+        display: flex;
+        margin: 0rem;
+        padding: 0rem;
+        width: 100%;
+    }
+
+    .search input
+    {
+        padding: 1rem 0rem;
+    }
+    
+    /* ---------------------SIGN IN------------------ */
+    .sign{
+        /* display: flex; */
+        right: 1rem;
+        text-align: right;
+        justify-content: right;
+        align-items: right;
+        padding: 0rem 0.7rem;
+        /* padding-top: 0.9rem; */
+    }
+    .sign span{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 100%;
+        padding: 1rem 0.4rem;
+        font-size: 1.2rem;
+        /* translate: 0% -1000%; */
+    }
+    .sign i{
+        translate: 0% 10%;
+        font-size: 2rem;
+    }
+
+    /* ---------------------CART----------------------- */
+    .cart{
+        /* display: flex; */
+        right: 1rem;
+        text-align: right;
+        justify-content: right;
+        align-items: right;
+    }
+    .cart i{
+        translate: 0% -30%;
+        font-size: 2rem;
+    }
+
+    /* -------------------BOTTOM SECTION---------------- */
+    .container .bottom .bottom-elements{
+        /* border: 1px solid red; */
+        min-width: fit-content;
+        padding:0.4rem;
+        margin: 0rem 0.4rem;
+    }
+    /* --------------------------------------NAVBAR------------------------------------------------- */
+    nav
+    {
+        background-color: #37475A;
+        height: auto;
+        padding: 0.4rem 0rem;
+    }
+    .navbar{
+        padding: 0rem 0rem;
+        display: flex;
+    }
+    .nav-items{
+        font-weight: lighter;
+        border: 0.1px solid #37475A;
+        margin: 0.1rem 0rem;
+        padding: 0.8rem 0rem;
+    }
+    #hamberger{
+        padding: 0.4rem 0rem;
+    }
+    .nav-items span{
+        font-size: 1.5rem;
+        margin: 0rem 1rem;
+    }
+        
 }
