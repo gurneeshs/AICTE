@@ -182,7 +182,7 @@ rightbutton1[6].addEventListener("click", ()=>{
 })
 
 
-// *****************************************HOME PAGE SECTION2****************************************************
+// *****************************************HOME PAGE SECTION2 MOBILE****************************************************
 let leftbutton2 = document.querySelectorAll(".lftm")
 let rightbutton2 = document.querySelectorAll(".rghtm")
 
