@@ -415,6 +415,36 @@ nav
     z-index: +1;
 
 }
+.left1{
+    position: absolute;
+    left: 2.1rem;
+    margin:10rem 0rem;
+    z-index: +3;
+}
+.right1{
+    position: absolute;
+    right: 2.1rem;
+    margin: 10rem 0rem;
+    z-index: +3;
+}
+
+.left1 i{
+    font-size: 2rem;
+    color: rgb(37, 37, 37);
+    padding: 2.7rem 1.2rem;
+    background-color: white;
+    border-top-right-radius: 6%;
+    border-bottom-right-radius: 6%;
+
+}
+.right1 i{
+    font-size: 2rem;
+    color: rgb(37, 37, 37);
+    padding: 2.7rem 1.2rem;
+    background-color: white;
+    border-top-left-radius: 6%;
+    border-bottom-left-radius: 6%;
+}
 
 /* --------------------------------------HOME PAGE SECTION2------------------------------------------------ */
 
@@ -511,6 +541,7 @@ nav
 }
 /* ---------------------CONT-ITMS2---------------------------- */
 .list-itms{
+    padding: 0rem 0rem;
     padding-top: 1.2rem;
     width: 100%;
     height: 100%;
@@ -521,6 +552,10 @@ nav
     background-color: white;
     width: 100%;
     margin: 0rem auto;
+}
+.image_list_cont{
+    overflow-x: hidden;
+
 }
 .image-cont h2{
     font-family: Arial, Helvetica, sans-serif;
@@ -555,17 +590,18 @@ nav
     margin:0.1rem auto;
     display: flex;
     width: 100%;
-    overflow-x: scroll;   
+    transition: 0.5s;
 }
 
 /* --------IMAGE------------ */
 .image{
     padding: 0rem;
-    margin: 0.1rem 0.5rem;
+    margin: 0.1rem 1.2rem;
     min-width: 20%;
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: 0.5s;
 }
 .image img{
     width: 100%;
@@ -914,6 +950,15 @@ footer .section3 .bottom .top li:hover{
     .cart i{
         font-size: 15px;
     }
+    .left1{
+        margin:8rem 0rem;
+        z-index: +3;
+    }
+    .right1{
+        margin: 8rem 0rem;
+        z-index: +3;
+    }
+    
 }
 
 @media only screen and (max-width: 650px) and (min-width:541px){
@@ -1162,8 +1207,22 @@ footer .section3 .bottom .top li:hover{
     .image-cont h2{
         width: 100%;
     }
-    
-    
+    .left1{
+        position: absolute;
+        left: 0.9rem;
+        margin:5rem 0rem;
+    }
+    .right1{
+        position: absolute;
+        right: 0.9rem;
+        margin: 5rem 0rem;
+    }
+    .left1 i{
+        padding:1.8rem 0.8rem;;
+    }
+    .right1 i{
+        padding: 1.8rem 0.8rem;
+    }
     /* --------------------------FOOTER SECTION-------------- */
     .section1 .card{
         margin: 0.5rem 0.2rem;
@@ -1294,5 +1353,22 @@ footer .section3 .bottom .top li:hover{
         padding-top: 1rem;
         padding-bottom: 0.7rem;
     }
-
 }
+@media only screen and (max-width: 540px ) and (min-width:455px){
+    .left1{
+        position: absolute;
+        left: 0.9rem;
+        margin:5rem 0rem;
+    }
+    .right1{
+        position: absolute;
+        right: 0.9rem;
+        margin: 5rem 0rem;
+    }
+    .left1 i{
+        padding:2.5rem 1.1rem;;
+    }
+    .right1 i{
+        padding: 2.5rem 1.1rem;
+    }   
+}  
